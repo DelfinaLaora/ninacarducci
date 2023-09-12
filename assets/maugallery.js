@@ -123,7 +123,7 @@
       let activeImage = null;
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
-          activeImage = $(this);
+          activeImage= $(this);
         }
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
