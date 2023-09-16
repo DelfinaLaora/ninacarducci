@@ -68,15 +68,14 @@ header {
 .picture {
 	flex: 1;
 	margin: 0 20px;
-	z-index: 0;
+	z-index: 0;	
 }
 
 .picture img {
 	width: 100%;
-	height: auto;
 }
 #about-me {
-	flex: 2
+	flex: 2;
 }
 .about-me__title {
 	margin-top: 1em;
@@ -87,7 +86,7 @@ header {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	width: 60%;
+	width: 80%;
 }
 
 #about-me .about-me__introduction {
@@ -186,7 +185,6 @@ header {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -201,7 +199,10 @@ header {
 	z-index: 1;
 }
 
+
 #contact {
+	display: flex;
+	flex-direction: column;
 	margin: auto;
 	background-color: #D8D3A8 ;
 	position: relative;
@@ -212,6 +213,12 @@ header {
 #contact .container {
 	display: flex;
 }
+
+.contact-info{
+	margin-top:30px;
+	margin-left: 10px;
+}
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -224,7 +231,6 @@ header {
 }
 .form-container {
 	flex : 2;
-
 }
 form {
 	display: flex;
@@ -269,12 +275,14 @@ input[type="submit"] {
 	#about-me h6, #about-me p {
 		width: 100%;
 	}
+	.contact-info{
+		margin-left: 18px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
-
 	}
 	.picture {
 		width: 50%;
@@ -282,11 +290,8 @@ input[type="submit"] {
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
-		position: absolute;
 		bottom: auto;
 		top: 0;
-		left: 0;
-		z-index: -1;
 	}
 	.about-me__title{
 		text-align: center;
@@ -308,10 +313,8 @@ input[type="submit"] {
 	#services .container::before{
 		width: 30%;
 		height: 100%;
-		bottom: 0;
 		right: 0;
 		left: auto;
-		z-index: 0;
 	}
 
 	#contact .container {
@@ -323,10 +326,9 @@ input[type="submit"] {
 	.picture.right::before {
 		width: 100%;
 		height: 30%;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		z-index: -1;
+	}
+	.contact-info{
+		z-index: 0;
 	}
 }
 
@@ -347,6 +349,7 @@ input[type="submit"] {
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
+
 	#services .container {
 		align-items: center;
 	}
@@ -357,6 +360,7 @@ input[type="submit"] {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+	
 	form {
 		width: 100%;
 	}
