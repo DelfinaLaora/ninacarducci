@@ -4,30 +4,44 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="google-site-verification" content="3XAMoL_HPf6iwklSyeGaNDb7kHtpP5vJqc4f3WG-hG0" />
-		<link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
-		<link rel="stylesheet" href="./styles/style.css">
+		
+		<!-- <link rel="stylesheet" href="./styles/bootstrap/bootstrap.css"> -->
+		<link rel="preload" href="./styles/bootstrap/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="./styles/bootstrap/bootstrap.css">
+		</noscript>
+		
+		<!-- <link rel="stylesheet" href="./styles/style.css"> -->
+		<link rel="preload" href="./styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="./styles/style.css">
+		</noscript>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
-		<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon.ico">
-		<link rel="manifest" href="public/site.webmanifest" crossorigin="use-credentials">
-		<script src="./styles/bootstrap/bootstrap.bundle.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"> -->
+		
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+		</noscript>
+		
+		<!-- <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon.ico">
+		<link rel="manifest" href="public/site.webmanifest" crossorigin="use-credentials"> -->
+		<script src="./styles/bootstrap/bootstrap.bundle.min.js" async ></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" defer integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="./scripts/maugallery.js" defer></script>
 		<script src="./scripts/scripts.js" defer></script>
 		
 		<meta name="instagram:title" content="Nina Carducci, Portrait & event photographer">
 		<meta name="instagram:description" content="Nina Carducci, Photographer in Bordeaux, French">
 		<meta name="instagram:url" content="https://www.instagram.com/ninacarducci.photo/?hl=fr">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Nina Carducci, Portrait & event photographer">
+		<meta name="twitter:description" content="Nina Carducci, Photographer in Bordeaux, French">
+		<meta name="twitter:image" content="https://ninacarducci.github.io/assets/images/nina.png">
 
 		<meta name="description" content="Nina Carducci, Photographer I present my portfolio, I offer my services, services for events, wedding, baptism, birth, photo shooting, retouching, photo album">
-		<!-- <meta name="author" content="Nina Carducci">
-		<meta name="address" content="68 avenue Alsace-Lorraine, 33200 Bordeaux">
-		<meta name="city" content="Bordeaux">
-		<meta name="country" content="French">
-		<meta name="phone" content="05 56 67 78 89">
-		<meta name="service" content="retouches photo, album photos, shooting photo"> -->
-		
+				
 		<script type = "application/ld+json" > 
 			{
 				"@context" : "https://schema.org" , 
@@ -129,13 +143,13 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">					
-						<img srcset="./assets/images/slider/walking-man-webp.webp 1440w, ./assets/images/slider/walking-man-webp375.webp 375w" src="./assets/images/slider/walking-man-webp375.webp"  class="d-block w-100" alt="Homme qui marche - walking man">
+						<img srcset="./assets/images/slider/walking-man-webp.webp 1440w, ./assets/images/slider/walking-man-webp375.webp 376w" src="./assets/images/slider/walking-man-webp375.webp" sizes="(min-width: 650px) 50vw, (min-width: 1000px) 100vw "  class="d-block w-100" alt="Homme qui marche - walking man">
 					</div>				
 					<div class="carousel-item">						
-						<img srcset="./assets/images/slider/crazy-crowds-webp.webp 1440w, ./assets/images/slider/crazy-crowds-webp375.webp 375w " src="./assets/images/slider/crazy-crowds-webp375.webp" class="d-block w-100" alt="Foule en folie - crazy crowds">
+						<img loading="lazy" srcset="./assets/images/slider/crazy-crowds-webp.webp 1440w, ./assets/images/slider/crazy-crowds-webp375.webp 376w " src="./assets/images/slider/crazy-crowds-webp375.webp" class="d-block w-100" alt="Foule en folie - crazy crowds">
 					</div>
 					<div class="carousel-item">						
-						<img srcset="./assets/images/slider/honeymooners-webp.webp 1440w, ./assets/images/slider/honeymooners-webp375.webp 375w" src="./assets/images/slider/honeymooners-webp375.webp" class="d-block w-100" alt="Jeunes mariés - honeymooners">
+						<img loading="lazy" srcset="./assets/images/slider/honeymooners-webp.webp 1440w, ./assets/images/slider/honeymooners-webp375.webp 376w" src="./assets/images/slider/honeymooners-webp375.webp" class="d-block w-100" alt="Jeunes mariés - honeymooners">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -151,7 +165,7 @@
 			<article id="about">
 				<div class="picture left">
 					<!-- <img src="./assets/images/nina.jpg" srcset="./assets/images/nina-webp.webp" alt="Nina Carducci"> -->
-					<img srcset="./assets/images/nina-webp.webp 400w , ./assets/images/nina-webp249.webp 249w" src="./assets/images/nina-webp249.webp" alt="Nina Carducci">
+					<img srcset="./assets/images/nina-webp.webp 1440w , ./assets/images/nina-webp249.webp 375w" src="./assets/images/nina-webp249.webp" alt="Nina Carducci">
 
 				</div>
 				<div id="about-me">
@@ -166,15 +180,15 @@
 				<h2 class="title">Portfolio Events & Portrait</h2>
 				<div class="container py-3">
 					<div class="gallery" style="display: none">						
-						<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/concert-party-room-webp.webp 466w, ./assets/images/gallery/concerts/concert-party-room-webp325.webp 325w" src="./assets/images/gallery/concerts/concert-party-room-webp.webp" alt="Concert Salle des fêtes - Concert party room">
-						<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/company-businessman-webp.webp 466w, ./assets/images/gallery/entreprise/company-businessman-webp325.webp 325w" src="./assets/images/gallery/entreprise/company-businessman-webp.webp" alt="Entreprise homme d'affaire - Company Businessman">
-						<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/company-smiling-woman-webp.webp 466w, ./assets/images/gallery/entreprise/company-smiling-woman-webp325.webp 375w" src="./assets/images/gallery/entreprise/company-smiling-woman-webp.webp" alt="Entreprise Femme souriante - Company Smiling woman">
-						<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/wedding-touching-hands-webp.webp 466w, ./assets/images/gallery/mariage/wedding-touching-hands-webp325.webp 325w" src="./assets/images/gallery/mariage/wedding-touching-hands-webp.webp" alt="Mariage mains qui se touchent - Wedding touching hands">
-						<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/portraits-blind-man-webp.webp 466w, ./assets/images/gallery/portraits/portraits-blind-man-webp325.webp 325w" src="./assets/images/gallery/portraits/portraits-blind-man-webp.webp" alt="Portraits homme qui ferme les yeux - Portraits blind man">
-						<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/wedding-honeymooners-webp.webp 466w, ./assets/images/gallery/mariage/wedding-honeymooners-webp325.webp 325w" src="./assets/images/gallery/mariage/wedding-honeymooners-webp.webp" alt="Mariage jeunes mariés - Wedding honeymooners">
-						<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/portraits-woman-against-a-fence-webp.webp 466w, ./assets/images/gallery/portraits/portraits-woman-against-a-fence-webp325.webp 325w" src="./assets/images/gallery/portraits/portraits-woman-against-a-fence-webp.webp" alt="Portraits femme contre un grillage - Portraits woman against a fence">
-						<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/singer-at-a-concert-webp.webp 466w, ./assets/images/gallery/concerts/singer-at-a-concert-webp325.webp 375w" src="./assets/images/gallery/concerts/singer-at-a-concert-webp.webp" alt="Chanteur lors d'un concert - Singer at a concert">
-						<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/company-woman-laughing-in-front-of-a-computer-webp.webp 466w, ./assets/images/gallery/entreprise/company-woman-laughing-in-front-of-a-computer-webp325.webp 325w" src="./assets/images/gallery/entreprise/company-woman-laughing-in-front-of-a-computer-webp.webp" alt="Entreprise femme qui éclate de rire  - Company woman laughing ">
+						<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/concert-party-room-webp.webp 1140w, ./assets/images/gallery/concerts/concert-party-room-webp325.webp 376w" src="./assets/images/gallery/concerts/concert-party-room-webp.webp" alt="Concert Salle des fêtes - Concert party room">
+						<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/company-businessman-webp.webp 1140w, ./assets/images/gallery/entreprise/company-businessman-webp325.webp 376w" src="./assets/images/gallery/entreprise/company-businessman-webp.webp" alt="Entreprise homme d'affaire - Company Businessman">
+						<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/company-smiling-woman-webp.webp 1140w, ./assets/images/gallery/entreprise/company-smiling-woman-webp325.webp 376w" src="./assets/images/gallery/entreprise/company-smiling-woman-webp.webp" alt="Entreprise Femme souriante - Company Smiling woman">
+						<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/wedding-touching-hands-webp.webp 1140w, ./assets/images/gallery/mariage/wedding-touching-hands-webp325.webp 376w" src="./assets/images/gallery/mariage/wedding-touching-hands-webp.webp" alt="Mariage mains qui se touchent - Wedding touching hands">
+						<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/portraits-blind-man-webp.webp 1140w, ./assets/images/gallery/portraits/portraits-blind-man-webp325.webp 376w" src="./assets/images/gallery/portraits/portraits-blind-man-webp.webp" alt="Portraits homme qui ferme les yeux - Portraits blind man">
+						<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/wedding-honeymooners-webp.webp 1140w, ./assets/images/gallery/mariage/wedding-honeymooners-webp325.webp 376w" src="./assets/images/gallery/mariage/wedding-honeymooners-webp.webp" alt="Mariage jeunes mariés - Wedding honeymooners">
+						<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/portraits-woman-against-a-fence-webp.webp 1140w, ./assets/images/gallery/portraits/portraits-woman-against-a-fence-webp325.webp 376w" src="./assets/images/gallery/portraits/portraits-woman-against-a-fence-webp.webp" alt="Portraits femme contre un grillage - Portraits woman against a fence">
+						<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/singer-at-a-concert-webp.webp 1140w, ./assets/images/gallery/concerts/singer-at-a-concert-webp325.webp 376w" src="./assets/images/gallery/concerts/singer-at-a-concert-webp.webp" alt="Chanteur lors d'un concert - Singer at a concert">
+						<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/company-woman-laughing-in-front-of-a-computer-webp.webp 1140w, ./assets/images/gallery/entreprise/company-woman-laughing-in-front-of-a-computer-webp325.webp 376w" src="./assets/images/gallery/entreprise/company-woman-laughing-in-front-of-a-computer-webp.webp" alt="Entreprise femme qui éclate de rire  - Company woman laughing ">
 					</div>
 				</div>			
 			</article>
@@ -254,7 +268,7 @@
 					</div>
 					<div class="picture right">
 						<!-- <img src="./assets/images/camera.jpg" srcset="./assets/images/camera-webp.webp" alt="Camera"> -->
-						<img srcset="./assets/images/camera-webp.webp 400w, ./assets/images/camera-webp229.webp 229w" src="./assets/images/camera-webp229.webp" alt="Camera">
+						<img srcset="./assets/images/camera-webp.webp 1440w, ./assets/images/camera-webp229.webp 376w" src="./assets/images/camera-webp229.webp" alt="Camera">
 					</div>					
 				</div>
 				<div class="contact-info">

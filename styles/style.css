@@ -1,5 +1,5 @@
 body {
-	max-width: 1920px;
+	max-width: 1600px;
 	margin: auto;
 }
 * {
@@ -45,7 +45,9 @@ header {
 	width: 20px;
 	height: auto;
 }
-
+.carousel-item img {
+	width: 100%;
+}
 #about {
 	display: flex;
 	background-color: #F6D2B8;
