@@ -46,7 +46,8 @@ header {
 	height: auto;
 }
 .carousel-item img {
-	width: 1440px;
+	width: 100%;
+	height: auto;
 }
 #about {
 	display: flex;
@@ -75,6 +76,7 @@ header {
 
 .picture img {
 	width: 100%;
+	height: auto;
 }
 #about-me {
 	flex: 2;
