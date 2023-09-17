@@ -46,7 +46,7 @@ header {
 	height: auto;
 }
 .carousel-item img {
-	width: 100%;
+	width: 1440px;
 }
 #about {
 	display: flex;
@@ -348,6 +348,7 @@ input[type="submit"] {
 		padding-block: 1em;
 		text-align: center;
 	}
+
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
