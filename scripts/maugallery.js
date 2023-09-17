@@ -116,13 +116,13 @@
     openLightBox(element, lightboxId) {
       $(`#${lightboxId}`)
         .find(".lightboxImage")
-        .attr("srcset", element.attr("srcset"));
+        .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
     prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
-        if ($(this).attr("srcset") === $(".lightboxImage").attr("srcset")) {
+        if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage= $(this);
         }
       });
@@ -149,19 +149,19 @@
         next = null;
 
       $(imagesCollection).each(function(i) {
-        if ($(activeImage).attr("srcset") === $(this).attr("srcset")) {
+        if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i - 1;
         }
       });
       next =
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
-      $(".lightboxImage").attr("srcset", $(next).attr("srcset"));
+      $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
-        if ($(this).attr("srcset") === $(".lightboxImage").attr("srcset")) {
+        if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
         }
       });
@@ -188,12 +188,12 @@
         next = null;
 
       $(imagesCollection).each(function(i) {
-        if ($(activeImage).attr("srcset") === $(this).attr("srcset")) {
+        if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i + 1;
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
-      $(".lightboxImage").attr("srcset", $(next).attr("srcset"));
+      $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
