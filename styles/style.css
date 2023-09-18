@@ -49,8 +49,11 @@ header {
 	width: 100%;
 	height: auto;
 }
+
 #about {
 	display: flex;
+	width: 100%;
+	height: auto;
 	background-color: #F6D2B8;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -85,6 +88,7 @@ header {
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
+	width: 60%;
 }
 .about-me__introduction {
 	font-family: 'Spectral';
@@ -365,6 +369,13 @@ input[type="submit"] {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
+	.about-me__title {		
+		font-size: 23px;
+		margin: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	} 
 	
 	form {
 		width: 100%;
