@@ -812,11 +812,11 @@ progress {
   border-radius: 0.25rem;  
 }
 
-.nav-pills .nav-link.active,
+/* .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff; 
-  background-color: #0d6efd;
-}
+  color: #fff;  
+  background-color: #0d6efd; 
+} */
 
 .toast {
   width: 350px;
